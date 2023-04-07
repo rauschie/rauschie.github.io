@@ -1,0 +1,609 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>1. The tooling - functions and types · Rau&#39;s tutorials</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="János Rauschenberger"><!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/style.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/custom.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/jekyll-gitbook/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/jekyll-gitbook//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/jekyll-gitbook/1970-01-02-problem.html" />
+        
+
+        
+            <link rel="next" href="/jekyll-gitbook/1970-01-04-rules.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/jekyll-gitbook/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook">
+            
+                <a href="/jekyll-gitbook/">
+                    Rau&#39;s tutorials
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/about/">
+                        
+                            <a href="/jekyll-gitbook/pages/about/">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/contact/">
+                        
+                            <a href="/jekyll-gitbook/pages/contact/">
+                                Contact
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/design/draft/">
+                        
+                            <a href="/jekyll-gitbook/pages/design/draft/">
+                                Design Draft
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+
+                    
+                        <li class="divider"></li>
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-01-foreword.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-01-foreword.html">
+                                Foreword
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-02-problem.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-02-problem.html">
+                                The Problem
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/jekyll-gitbook/1970-01-03-tooling.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-03-tooling.html">
+                                1. The tooling - functions and types
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#sets">Sets</a></li><li><a href="#anatomy-of-a-function">Anatomy of a function</a></li><li><a href="#set-operators--algebraic-data-types">Set operators – Algebraic data types</a><ul><li><a href="#product-type">Product type</a><ul><li><a href="#encoding-fun">Encoding fun()</a></li></ul></li><li><a href="#sum-type">Sum type</a><ul><li><a href="#pattern-matching">Pattern matching</a></li></ul></li><li><a href="#key-takeaways">Key takeaways</a></li><li><a href="#optional-reading">Optional reading</a><ul><li><a href="#top--bottom--and-unit-types">Top-, Bottom- and Unit types</a></li><li><a href="#a-side-note-on-etymology">A side note on etymology</a></li></ul></li></ul></li></ul>
+
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-04-rules.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-04-rules.html">
+                                2. The rules – reasoning about state
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-05-programs.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-05-programs.html">
+                                3. Writing actual programs
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-30-glossary.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-30-glossary.html">
+                                Glossary
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2019-04-29-license.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2019-04-29-license.html">
+                                License
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html">
+                                Page with cover image
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">
+                                Tips, Warnings, and Dangers
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+
+                    
+                        <li class="divider"></li>
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >1. The tooling - functions and types</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/tooling">1. The tooling - functions and types</h1>
+                    
+
+                    <p>We’ve been talking about <i>data</i>, <i>operations</i> and <i>chaining</i> instructions - intuitively the concept of a function that one has become familiar with during school years, seems like something that could be of interest here. Let’s reiterate what that is and what extremely useful properties it has.</p>
+
+<h1 id="sets">Sets</h1>
+
+<p>$x: \mathbb{z}$ – Let x be an element of $\mathbb{Z}$.<br />
+$\mathbb{Z}$ is a set. In typed programming languages, expressions are assigned a type. You can think of types as sets.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#503674be-5e3a-447f-a341-5b71a6342dbf'}">
+
+	<li class="uk-active"><a href="#">c</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="503674be-5e3a-447f-a341-5b71a6342dbf" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">x</span><span class="k">:</span> <span class="kt">Int</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Integer</span> <span class="n">x</span><span class="o">;</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h1 id="anatomy-of-a-function">Anatomy of a function</h1>
+
+<p>They have to do with two kinds of data: the kind they can be applied to, and the kind they spew out. You can describe one like this:</p>
+
+\[f:\mathbb{Z} \Rightarrow \mathbb{Q} = x \mapsto \frac{x}{2}\]
+
+<p>where $f$ is the symbol by which the function is referenced, $\mathbb{Z}$ is the set of things $f$ is applicable to, and the expression on the right hand side maps any element $x$ of $\mathbb{Z}$ to exactly one thing of type $\mathbb{Q}$.
+$f(x)$ - read: ‘$f$ of $x$’ is then called the image of $x$ under $f$. 
+The term $\mathbb{Z} \Rightarrow \mathbb{Q}$ denotes the set of functions that map from $\mathbb{Z}$ to $\mathbb{Q}$. 
+The set of functions is indeed a thing, thus we will encounter functions that operate on other functions, return them, or both. Note that in order for the expression $f(x)$ to make sense, both the symbols $f$ and $x$ have to be unambiguous, the practical implication being that you can’t reassign them. //TODO</p>
+
+<h1 id="set-operators--algebraic-data-types">Set operators – Algebraic data types</h1>
+<p>The notion of a function is quite closely coupled to that of a set, you define one in terms of its domain and codomain. Two operations over sets are of fundamental interest: they enable us to clearly define what data our function can access and what shape of data it outputs.</p>
+
+<p>Algebraic data types are the way functional programs model the world and represent state - they are a notion just as fundamental as classes are for OOP. Given some axiomatic types – think: primitives, they enable you to represent arbitrarily complex data.</p>
+
+<h2 id="product-type">Product type</h2>
+<p>aka tuple, record, struct</p>
+
+<p>$\mathbb{A}\times\mathbb{B}$
+ – an element from $\mathbb{A}$ $and$ one from $\mathbb{B}$.</p>
+
+<p>A $\mathbb{U}$sername an an $\mathbb{I}$d. $\mathbb{B}$read and $\mathbb{B}$utter. The deeply familiar construct used to bunch up a couple of things that just go together.  If you’ve ever seen a tuple, struct or even a class (forget methods though –setters especially), you already have a great intuition about what it does. You’d want to use it for all the usual reasons, like grouping data points that don’t make sense without each other or outputting multiple values.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#89eb5218-5fd8-4e8f-aa31-cfd3f061c867'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="89eb5218-5fd8-4e8f-aa31-cfd3f061c867" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">User</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">email</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">User</span><span class="p">{</span>
+    <span class="n">email</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+    <span class="n">id</span><span class="p">:</span> <span class="nb">u64</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">case</span> <span class="k">class</span> <span class="nc">User</span><span class="o">(</span><span class="n">email</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">id</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">record</span> <span class="nf">User</span><span class="o">(</span><span class="nc">String</span> <span class="n">email</span><span class="o">,</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">){}</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<p>It gives us a trivial way to extend the capabilities of the function costruct: it is now capable of taking on any finite number of arguments that can be expressed via our type system, as well as outputting structured data. Given:</p>
+
+<p>$\mathbb{U}ser:=\mathbb{S}tring \times \mathbb{L}ong $
+//TODO</p>
+
+<h3 id="encoding-fun">Encoding fun()</h3>
+
+<p>For all intents and purposes, you can always substitute an n-ary function</p>
+
+<p>$f:(x \in \mathbb{A}, y \in \mathbb{B}, …, i \in \mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>for an unary one, taking a product:</p>
+
+<p>$f:(\mathbb{A}\times\mathbb{B}\times … \times \mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>a perhaps bit lesser-known trick is to substitute for a chain of unary functions, each returning an unary function taking the next member of the product:</p>
+
+<p>$f:(\mathbb{A})\Rightarrow(\mathbb{B})\Rightarrow … \Rightarrow (\mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>you would then apply $f$ like this:</p>
+
+<p>$z:\mathbb{Z} = f(x)(y)…(i)$</p>
+
+<p>The third form is called a Curried function.</p>
+
+<h2 id="sum-type">Sum type</h2>
+<p>aka disjoint union, tagged union, coproduct</p>
+
+<p>\(\mathbb{A}\bigsqcup\mathbb{B}\), sometimes: $\mathbb{A}+\mathbb{B}$
+ – an element from $\mathbb{A}$ $or$ from $\mathbb{B}$.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#524b19d6-e5e3-4966-885a-cac8456929fe'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+</ul>
+
+<ul id="524b19d6-e5e3-4966-885a-cac8456929fe" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">type</span> <span class="nx">Pet</span> <span class="o">=</span> <span class="nx">Cat</span> <span class="o">|</span> <span class="nx">Dog</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="n">Pet</span> <span class="p">{</span>
+    <span class="n">Cat</span><span class="p">,</span>
+    <span class="n">Dog</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">trait</span> <span class="nc">Pet</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Cat</span><span class="o">()</span> <span class="k">extends</span> <span class="nc">Pet</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Dog</span><span class="o">()</span> <span class="k">extends</span> <span class="nc">Pet</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h3 id="pattern-matching">Pattern matching</h3>
+<p>You have at some point likely encountered something like <a href="https://en.wikipedia.org/wiki/Dirichlet_function">this</a> function:</p>
+
+<p>$f: =
+(x : \mathbb{R}) \mapsto
+  \begin{cases}
+    1 &amp;\text{if } (x) \in \mathbb{Q} \\<br />
+    0 &amp;\text{else}
+  \end{cases} $</p>
+
+<p>//TODO ad-hoc polymorphism</p>
+
+<h2 id="key-takeaways">Key takeaways</h2>
+<ul>
+  <li>If you read “Type”, think: “Set”</li>
+  <li>If you see “<code class="language-plaintext highlighter-rouge">:</code>”, think: “$\in$”</li>
+  <li>If you read “Product type”, think: “$and$”, “Struct”, “Tuple”, even: “Class”</li>
+  <li>If you read “Sum type”, think: “$or$”, “Enum”, “Traits” or whatever construct your language choses to encode this type-level operator with</li>
+</ul>
+
+<h2 id="optional-reading">Optional reading</h2>
+<h3 id="top--bottom--and-unit-types">Top-, Bottom- and Unit types</h3>
+<ul>
+  <li>Top type ~ a supertype of all types. <code class="language-plaintext highlighter-rouge">Any</code>.</li>
+  <li>Unit type ~ any singleton type really. Point is, that if it serves as the codomain of a pure function, all the elements of the domain can only map to a single element in the codomain, thus all pure functions mapping a given type to the unit type are equal.</li>
+  <li>Bottom type ~ a subtype of all types. <code class="language-plaintext highlighter-rouge">Nothing</code>.
+<img src="assets/wip.png" alt="wip" class="img-responsive" /></li>
+</ul>
+
+<h3 id="a-side-note-on-etymology">A side note on etymology</h3>
+<p>The terms “sum-“ and “product type” reflect on the observation that the number of elements in the cartesian product and disjoint union, denoted $|\mathbb{A}\times\mathbb{B}|$ and $|\mathbb{A}\bigsqcup\mathbb{B}|$, equals that of 
+$|\mathbb{A}| \cdot |\mathbb{B}|$ and $|\mathbb{A}|\ + |\mathbb{B}|$ respectively.<br />
+//TODO verify milewski<br />
+Over some type systems, these operators also work analoguosly to multiplication and addition over a semiring.
+Category theory has the concept of a “dual construct”, which is then called co-<code class="language-plaintext highlighter-rouge">$CONSTRUCT</code>, and the disjoint union being the dual of the product in that framework, is termed “coproduct”.</p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+                        <a href="/jekyll-gitbook/1970-01-02-problem.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: The Problem">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/jekyll-gitbook/1970-01-04-rules.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2. The rules – reasoning about state">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "2. The rules – reasoning about state",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/1970-01-04-rules.md",
+            "ref": "_posts/1970-01-04-rules.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"],
+                "facebook": false,
+                "google": false,
+                "github": true,
+                "github_link": "https://github.com",
+                "telegram": false,
+                "telegram_link": "https://t.me",
+                "instapaper": false,
+                "twitter": true,
+                "vk": false,
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Rau's tutorials",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/1970-01-03-tooling.md",
+        "mtime": "1970-01-03 00:00:00 +0100",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-04-07 11:33:50 +0200"
+    },
+    "basePath": "/jekyll-gitbook",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/jekyll-gitbook/assets/gitbook/gitbook.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/theme.js"></script>
+
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+</body>
+</html>
