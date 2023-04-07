@@ -1,8 +1,8 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title: "Rau's tutorials"
+longtitle: "A mostly self-contained FP guide"
+author:           János Rauschenberger
+email:            rauschie.j@live.com
 description: >
   Build Jekyll site with the GitBook style.
 
@@ -33,8 +33,6 @@ kramdown:
   smart_quotes:           lsquo,rsquo,ldquo,rdquo
   toc_levels:             1..6
   syntax_highlighter:     rouge
-  syntax_highlighter_opts:
-    guess_lang:           true
 
 syntax_highlighter_style: colorful
 
@@ -56,11 +54,12 @@ collections:
 
 page_width: 800px
 
-destination:      ./_site
+destination:      ./_docs
 incremental:      false
 regenerate:       true
 
 plugins:
   - jekyll-feed
   - jekyll-readme-index
+  - jekyll-code-tabs
   - jemoji
