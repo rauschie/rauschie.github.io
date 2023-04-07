@@ -1,0 +1,596 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head><meta charset="UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>3. Writing actual programs · Rau&#39;s tutorials</title><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="Build Jekyll site with the GitBook style.
+"><meta name="generator" content="Jekyll (using style of GitBook 3.2.3)"><meta name="author" content="János Rauschenberger"><!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/style.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/website.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.css">
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/rouge/colorful.css">
+
+<link rel="stylesheet" href="/jekyll-gitbook/assets/gitbook/custom.css">
+
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/jekyll-gitbook/assets/gitbook/images/apple-touch-icon-precomposed-152.png">
+<link rel="shortcut icon" href="/jekyll-gitbook//assets/gitbook/images/favicon.ico" type="image/x-icon">
+
+
+
+
+            <link rel="prev" href="/jekyll-gitbook/1970-01-04-rules.html" />
+        
+
+        
+            <link rel="next" href="/jekyll-gitbook/1970-01-30-glossary.html" />
+        
+    </head>
+    <body>
+        <div class="book"><div class="book-summary">
+    <nav role="navigation">
+        <div id="book-search-input" role="search">
+            <input type="text" placeholder="Type to search" />
+        </div>
+        <div id="book-search-input-link" role="search">
+            <a href="/jekyll-gitbook/assets/search.html">Click to Search</a>
+        </div>
+        <ul class="summary">
+            
+            <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook">
+            
+                <a href="/jekyll-gitbook/">
+                    Rau&#39;s tutorials
+                </a>
+            </li>
+
+            <li class="divider"></li>
+
+            
+                <!-- <p>pages</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/about/">
+                        
+                            <a href="/jekyll-gitbook/pages/about/">
+                                About
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/contact/">
+                        
+                            <a href="/jekyll-gitbook/pages/contact/">
+                                Contact
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/pages/design/draft/">
+                        
+                            <a href="/jekyll-gitbook/pages/design/draft/">
+                                Design Draft
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+
+                    
+                        <li class="divider"></li>
+                    
+                
+            
+                <!-- <p>posts</p> -->
+                
+                    
+
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-01-foreword.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-01-foreword.html">
+                                Foreword
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-02-problem.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-02-problem.html">
+                                The Problem
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-03-tooling.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-03-tooling.html">
+                                1. The tooling - functions and types
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-04-rules.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-04-rules.html">
+                                2. The rules – reasoning about state
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter active" data-level="1.2" data-path="/jekyll-gitbook/1970-01-05-programs.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-05-programs.html">
+                                3. Writing actual programs
+                            </a>
+                            
+                                
+                                    <ul><li><a href="#type-constuctors--abstracting-over-side-effects">Type constuctors – Abstracting over (side-)effects</a><ul><li><a href="#an-intro-the-maybe-type">An intro: the “Maybe” type</a></li></ul></li><li><a href="#monads--encoding-the-notion-and-then">Monads – encoding the notion: “And $then$”</a><ul><li><a href="#monad-laws">Monad laws</a></li><li><a href="#list--i-dont-care-how-many-times">List – I don’t care, how many times</a></li><li><a href="#either--complex-error-handling">Either – Complex error handling</a></li><li><a href="#io--asynchronous-computations">IO – Asynchronous computations</a></li><li><a href="#reader--dependency-injection">Reader – Dependency injection</a></li></ul></li></ul>
+
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/1970-01-30-glossary.html">
+                        
+                            <a href="/jekyll-gitbook/1970-01-30-glossary.html">
+                                Glossary
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2019-04-29-license.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2019-04-29-license.html">
+                                License
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2022-05-24-page_cover.html">
+                                Page with cover image
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+                        
+                        <li class="chapter" data-level="1.1" data-path="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">
+                        
+                            <a href="/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html">
+                                Tips, Warnings, and Dangers
+                            </a>
+                            
+                                
+                            
+                        </li>
+                    
+
+                    
+                        <li class="divider"></li>
+                    
+                
+            
+        </ul>
+    </nav>
+</div>
+<div class="book-body">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        
+                            <a href="." >3. Writing actual programs</a>
+                        
+                    </h1>
+                </div>
+
+                <div class="body-inner"><div class="page-wrapper" tabindex="-1" role="main">
+    
+
+    <div class="page-inner">
+        <div id="book-search-results">
+            <div class="search-noresults">
+                <section class="normal markdown-section">
+                    
+                        <h1 id="/programs">3. Writing actual programs</h1>
+                    
+
+                    <h2 id="type-constuctors--abstracting-over-side-effects">Type constuctors – Abstracting over (side-)effects</h2>
+<p>We’ve shown how expressing our programs in terms of pure functions is extremely beneficial for composability and correctness, however, we are asking a <i>lot</i> of today’s programs. They have to operate over networks, across multiple processors, often on spotty data and can have ridiculously complex dependencies. At this point it is still unclear, how pure functions can encode such computational contexts.
+In this chapter, we are introducing an essential construct that can be used to abstract away the most common effects, that obfuscate variables. Some of those are: not being readily available or available at all, needing external dependencies or needing a plan B if things go seriously wrong (throwing <code class="language-plaintext highlighter-rouge">Exception</code>s).</p>
+
+<h3 id="an-intro-the-maybe-type">An intro: the “Maybe” type</h3>
+
+<p>Given</p>
+
+<p>$\mathbb{A}:$ any type expressible by the type system</p>
+
+<p>you can define:</p>
+
+<p>$Maybe(\mathbb{A}) := \mathbb{A}\bigsqcup()$</p>
+
+<p>–  where $()$ denotes the empty set. We aren’t picking the empty set because it’s empty, but because it is agreed that every set contains it. It serves as the bottom type, a type that is a subtype of all other types. 
+ You might ask what’s in the empty set and your answer is right: nothing. Types like <code class="language-plaintext highlighter-rouge">never</code>, <code class="language-plaintext highlighter-rouge">Nothing</code> or <code class="language-plaintext highlighter-rouge">null</code> can be used to encode exactly that notion. A value of type $Maybe(\mathbb{A})$ is then either an $\mathbb{A}$ or nothing.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#3fd5a3e4-1d0f-4e10-abf7-3ff86c587855'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="3fd5a3e4-1d0f-4e10-abf7-3ff86c587855" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="nb">Option</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="nb">None</span><span class="p">,</span>
+    <span class="nf">Some</span><span class="p">(</span><span class="n">T</span><span class="p">),</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">+A</span><span class="o">]</span>
+<span class="nc">case</span> <span class="k">object</span> <span class="nc">None</span> <span class="k">extends</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Some</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="nc">extends</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+</ul>
+
+<p>//TODO code matching example</p>
+<h2 id="monads--encoding-the-notion-and-then">Monads – encoding the notion: “And $then$”</h2>
+
+<p>The type $Maybe$, together with two operations defined over it is an example of a monad.
+The monad is a construct that lets us encapsulate some side effect and takes the form of some type constructor $M()$. We’ll call the first associated operation ‘$then$’.</p>
+
+<p>$\cdot \mathbin{then} \cdot: (Maybe(\mathbb{A}), \mathbb{A} \Rightarrow Maybe(\mathbb{B}))\Rightarrow Maybe(\mathbb{B})$</p>
+
+<p>The notation is a bit tense at first but what this operator does is allowing you to chain any number of functions together that return a $Maybe$.</p>
+
+<p>given:</p>
+
+<p>$getUserByEmail: \mathbb{String} \Rightarrow Maybe(\mathbb{User})$
+$getActiveSessionByUser: \mathbb{U}ser \Rightarrow Maybe(\mathbb{S}ession)$<br />
+$getCartContentBySession: \mathbb{S}ession \Rightarrow Maybe(\mathbb{C}artItems)$</p>
+
+<p>you can define:</p>
+
+<p>$getCartContentByEmail: \mathbb{S}tring \Rightarrow Maybe(\mathbb{C}artItems)$<br />
+$= getUserByEmail \mathbin{then} (getActiveSessionByUser \mathbin{then} (getCartContentBySession))$</p>
+
+<p>the operator $then$ runs by a number of aliases, including <code class="language-plaintext highlighter-rouge">flatMap</code>, <code class="language-plaintext highlighter-rouge">pipe</code>, <code class="language-plaintext highlighter-rouge">&gt;&gt;=</code>, the latter pronounced as “[monadic] bind”</p>
+<ul class="uk-tab" data-uk-switcher="{connect:'#da31ced5-15e4-4650-babf-e13a90163fa9'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="da31ced5-15e4-4650-babf-e13a90163fa9" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">get_user_by_email</span> <span class="p">:</span> <span class="nf">FnOnce</span><span class="p">(</span><span class="o">&amp;</span><span class="nb">str</span><span class="p">)</span> <span class="k">-&gt;</span> <span class="nb">Option</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="nf">get_user_by_email</span><span class="p">(</span><span class="s">"me@hooli.com"</span><span class="p">)</span>
+  <span class="nf">.and_then</span><span class="p">(</span><span class="n">get_active_session_by_user</span><span class="p">)</span>
+  <span class="nf">.and_then</span><span class="p">(</span><span class="n">get_cart_content_by_session</span><span class="p">)</span>
+<span class="c1">//TODO</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="n">getUserByEmail</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">User</span><span class="o">]</span>
+<span class="o">...</span>
+<span class="nf">getUserByEmail</span><span class="o">(</span><span class="s">"me@hooli.com"</span><span class="o">)</span>
+  <span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">activeSession</span><span class="o">)</span>
+  <span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">cartContent</span><span class="o">)</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+</ul>
+
+<p>Let’s stop and ponder for a second on what we just did here.</p>
+
+<h3 id="monad-laws">Monad laws</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h4 id="left--and-right-identity">Left- and right identity</h4>
+<h4 id="associativity">Associativity</h4>
+
+<h3 id="list--i-dont-care-how-many-times">List – I don’t care, how many times</h3>
+<p>Many languages implement $flatMap$ over a collection, offering an alternative for nested loops. The most often cited example is the linked list though, since it can be nicely described in a functional way:</p>
+
+<p>$List(\mathbb{A}):= Cons(\mathbb{A}) \bigsqcup Nil$<br />
+$Nil: List(())$<br />
+$Cons(\mathbb{A}) := \mathbb{A} \times List(\mathbb{A})$<br />
+$\cdot \mathbin{::}\cdot = (head: \mathbb{A}, tail: List(\mathbb{A})) \Rightarrow Cons(\mathbb{A}) \\<br />
+= head :: tail \mapsto (head, tail)$</p>
+
+<p>if you then write:<br />
+<code class="language-plaintext highlighter-rouge">foo</code>$\mathbin{::}$<code class="language-plaintext highlighter-rouge">bar</code>$\mathbin{::}$<code class="language-plaintext highlighter-rouge">baz</code>$\mathbin{::}Nil$</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type Nil = List&lt;Nothing&gt;
+type Cons&lt;A&gt; = {
+  head: A
+  tail: List&lt;A&gt;
+}
+type List&lt;A&gt; = Cons&lt;A&gt; | Nil
+</code></pre></div></div>
+<ul class="uk-tab" data-uk-switcher="{connect:'#c6e0a04a-ba9c-4453-87e4-277b3227d483'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+</ul>
+
+<ul id="c6e0a04a-ba9c-4453-87e4-277b3227d483" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">List</span><span class="o">[</span><span class="kt">+A</span><span class="o">]</span>
+<span class="nc">case</span> <span class="k">class</span> <span class="nc">::</span><span class="o">[</span><span class="kt">+A</span><span class="o">](</span><span class="n">head</span><span class="k">:</span> <span class="kt">A</span><span class="o">,</span> <span class="n">tail</span><span class="k">:</span><span class="kt">List</span><span class="o">[</span><span class="kt">+A</span><span class="o">])</span> <span class="k">extends</span> <span class="nc">List</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+<span class="k">case</span> <span class="k">object</span> <span class="nc">Nil</span> <span class="k">extends</span> <span class="nc">List</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h4 id="functor--a-relaxed-monad">Functor – a relaxed monad</h4>
+<p>$flatMap:= flatten \circ map$<br />
+associativity of flatmap ==&gt;<br />
+you can collapse the effect ==&gt;
+no matter how deep you nest the effect $Maybe$, at the end, you will be left with a value or nothing.
+//TODO</p>
+
+<h3 id="either--complex-error-handling">Either – Complex error handling</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h3 id="io--asynchronous-computations">IO – Asynchronous computations</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h3 id="reader--dependency-injection">Reader – Dependency injection</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+</section>
+            </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div></div>
+    </div>
+</div>
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [ ['$', '$'], ['\\(', '\\)'] ]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script
+  type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+                        <a href="/jekyll-gitbook/1970-01-04-rules.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2. The rules – reasoning about state">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                    
+
+                    
+                        <a href="/jekyll-gitbook/1970-01-30-glossary.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Glossary">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    
+                </div>
+            </div>
+
+            <script>
+            var gitbook = gitbook || [];
+            gitbook.push(function() {
+                gitbook.page.hasChanged({
+    "page": {
+        "title": "Introduction",
+        "level": "1.1",
+        "depth": 1,
+        
+        "next": {
+            "title": "Glossary",
+            "level": "1.2",
+            "depth": 1,
+            "path": "_posts/1970-01-30-glossary.md",
+            "ref": "_posts/1970-01-30-glossary.md",
+            "articles": []
+        },
+        
+        "dir": "ltr"
+    },    "config": {
+        "plugins": ["fontsettings", "highlight", "livereload", "lunr", "search", "sharing", "theme-default", "livereload"],
+        "styles": {
+            "ebook": "styles/ebook.css",
+            "epub": "styles/epub.css",
+            "mobi": "styles/mobi.css",
+            "pdf": "styles/pdf.css",
+            "print": "styles/print.css",
+            "website": "styles/website.css"
+        },
+        "pluginsConfig": {
+            "fontsettings": {
+                "family": "sans",
+                "size": 2,
+                "theme": "white"
+            },
+            "highlight": {},
+            "livereload": {},
+            "lunr": {
+                "ignoreSpecialCharacters": false,
+                "maxIndexSize": 1000000
+            },
+            "search": {},            "sharing": {
+                "all": ["facebook", "google", "twitter", "weibo", "instapaper", "github", "telegram"],
+                "facebook": false,
+                "google": false,
+                "github": true,
+                "github_link": "https://github.com",
+                "telegram": false,
+                "telegram_link": "https://t.me",
+                "instapaper": false,
+                "twitter": true,
+                "vk": false,
+                "weibo": false
+            },
+"theme-default": {
+                "showLevel": false,
+                "styles": {
+                    "ebook": "styles/ebook.css",
+                    "epub": "styles/epub.css",
+                    "mobi": "styles/mobi.css",
+                    "pdf": "styles/pdf.css",
+                    "print": "styles/print.css",
+                    "website": "styles/website.css"
+                }
+            }
+        },
+        "theme": "default",
+        "author": "Tao He",
+        "pdf": {
+            "pageNumbers": true,
+            "fontSize": 12,
+            "fontFamily": "Arial",
+            "paperSize": "a4",
+            "chapterMark": "pagebreak",
+            "pageBreaksBefore": "/",
+            "margin": {
+                "right": 62,
+                "left": 62,
+                "top": 56,
+                "bottom": 56
+            }
+        },
+        "structure": {
+            "langs": "LANGS.md",
+            "readme": "README.md",
+        },
+        "variables": {},
+        "title": "Rau's tutorials",
+        "language": "en",
+        "gitbook": "*"
+    },
+    "file": {
+        "path": "_posts/1970-01-05-programs.md",
+        "mtime": "1970-01-05 00:00:00 +0100",
+        "type": "markdown"
+    },
+    "gitbook": {
+        "version": "3.2.3",
+        "time": "2023-04-07 11:31:58 +0200"
+    },
+    "basePath": "/jekyll-gitbook",
+    "book": {
+        "language": ""
+    }
+});
+            });
+            </script>
+        </div><script src="/jekyll-gitbook/assets/gitbook/gitbook.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/theme.js"></script>
+
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+
+<!-- <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+<script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+<script src="../gitbook/gitbook-plugin-search/search.js"></script> -->
+
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-search-pro/search.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+<script src="/jekyll-gitbook/assets/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://sighingnow.github.io/jekyll-gitbook/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sighingnow.github.io/jekyll-gitbook/" rel="alternate" type="text/html" /><updated>2023-04-07T11:31:58+02:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/feed.xml</id><title type="html">Rau’s tutorials</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>János Rauschenberger</name></author><entry><title type="html">Tips, Warnings, and Dangers</title><link href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html" rel="alternate" type="text/html" title="Tips, Warnings, and Dangers" /><published>2022-06-30T00:00:00+02:00</published><updated>2022-06-30T00:00:00+02:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/jekyll/tips_warnings_dangers</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html"><![CDATA[<p>The jekyll-theme supports tips, warnings, and dangers blocks and the style is referred
+from <a href="https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas">the discord.js website</a>.</p>
+
+<p>You could have the following <a href="https://kramdown.gettalong.org/quickref.html#block-attributes">markdown attributes (supported by kramdown)</a>:</p>
+
+<h3 id="tips">Tips</h3>
+
+<p>Using a <code class="language-plaintext highlighter-rouge">{: .block-tip}</code> attribute:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### TIP</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have</span>
+<span class="gt">&gt; this or a similar version after installation.</span>
+{: .block-tip }
+</code></pre></div></div>
+
+<blockquote class="block-tip">
+  <h5 id="tip">TIP</h5>
+
+  <p>This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
+this or a similar version after installation.</p>
+</blockquote>
+
+<h3 id="warnings">Warnings</h3>
+
+<p>Using a <code class="language-plaintext highlighter-rouge">{: .block-warning}</code> attribute:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### WARNING</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; Be sure that you're familiar with things like async/await and object destructuring</span>
+<span class="gt">&gt; before continuing, as we'll be making use of features like these.</span>
+{: .block-warning }
+</code></pre></div></div>
+
+<blockquote class="block-warning">
+  <h5 id="warning">WARNING</h5>
+
+  <p>Be sure that you’re familiar with things like async/await and object destructuring
+before continuing, as we’ll be making use of features like these.</p>
+</blockquote>
+
+<h3 id="dangers">Dangers</h3>
+
+<p>Using a <code class="language-plaintext highlighter-rouge">{: .block-danger}</code> attribute:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; ##### DANGER</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; You cannot delete an ephemeral message.</span>
+{: .block-danger }
+</code></pre></div></div>
+
+<blockquote class="block-danger">
+  <h5 id="danger">DANGER</h5>
+
+  <p>You cannot delete an ephemeral message.</p>
+</blockquote>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[The jekyll-theme supports tips, warnings, and dangers blocks and the style is referred from the discord.js website.]]></summary></entry><entry><title type="html">Page with cover image</title><link href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html" rel="alternate" type="text/html" title="Page with cover image" /><published>2022-05-24T00:00:00+02:00</published><updated>2022-05-24T00:00:00+02:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/jekyll/page_cover</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html"><![CDATA[<p>The jekyll-gitbook theme supports adding a cover image to a specific page by adding
+a <code class="language-plaintext highlighter-rouge">cover</code> field to the page metadata:</p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ---
+  title: Page with cover image
+  author: Tao He
+  date: 2022-05-24
+  category: Jekyll
+  layout: post
+<span class="gi">+ cover: /assets/jekyll-gitbook/dinosaur.gif
+</span>  ---
+</code></pre></div></div>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[The jekyll-gitbook theme supports adding a cover image to a specific page by adding a cover field to the page metadata:]]></summary></entry><entry><title type="html">License</title><link href="https://sighingnow.github.io/jekyll-gitbook/jekyll/2019-04-29-license.html" rel="alternate" type="text/html" title="License" /><published>2019-04-29T00:00:00+02:00</published><updated>2019-04-29T00:00:00+02:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/jekyll/license</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/jekyll/2019-04-29-license.html"><![CDATA[<p>This work is open sourced under the Apache License, Version 2.0, using the
+same license as the original <a href="https://github.com/GitbookIO/gitbook">GitBook</a> repository.</p>
+
+<p>Copyright 2019 Tao He.</p>]]></content><author><name>Tao He</name></author><category term="Jekyll" /><summary type="html"><![CDATA[This work is open sourced under the Apache License, Version 2.0, using the same license as the original GitBook repository.]]></summary></entry><entry><title type="html">Glossary</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-30-glossary.html" rel="alternate" type="text/html" title="Glossary" /><published>1970-01-30T00:00:00+01:00</published><updated>1970-01-30T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/glossary</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-30-glossary.html"><![CDATA[<h3 id="operator">operator</h3>
+<ul> //TODO  
+a function. Often used as a shorthand for 'binary operator', which takes two things of one type and combines them into a single thing of same type, so they lend themselves well for infix notation. A set being 'closed' under an operation makes intuitive sense then: given only elements of a set and such an operator, you can't express anything</ul>
+
+<h3 id="isomorph">isomorph</h3>
+<ul>
+  <li>for the current intents and purposes, the same.</li>
+</ul>
+
+<h3 id="type-constructor">type constructor</h3>
+<ul>
+  <li>a type with one or more holes that you can plug another types into, like <code class="language-plaintext highlighter-rouge">EventHandler&lt;E&gt;</code> or <code class="language-plaintext highlighter-rouge">Map&lt;K,V&gt;</code>. Since it is a type in itself, you can consider it as an encoding of a type level function.</li>
+</ul>
+
+<h3 id="type-level-function">type level function</h3>
+<ul>
+  <li>a function that operates on a given language’s types. //TODO</li>
+</ul>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[operator //TODO a function. Often used as a shorthand for 'binary operator', which takes two things of one type and combines them into a single thing of same type, so they lend themselves well for infix notation. A set being 'closed' under an operation makes intuitive sense then: given only elements of a set and such an operator, you can't express anything]]></summary></entry><entry><title type="html">3. Writing actual programs</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-05-programs.html" rel="alternate" type="text/html" title="3. Writing actual programs" /><published>1970-01-05T00:00:00+01:00</published><updated>1970-01-05T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/programs</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-05-programs.html"><![CDATA[<h2 id="type-constuctors--abstracting-over-side-effects">Type constuctors – Abstracting over (side-)effects</h2>
+<p>We’ve shown how expressing our programs in terms of pure functions is extremely beneficial for composability and correctness, however, we are asking a <i>lot</i> of today’s programs. They have to operate over networks, across multiple processors, often on spotty data and can have ridiculously complex dependencies. At this point it is still unclear, how pure functions can encode such computational contexts.
+In this chapter, we are introducing an essential construct that can be used to abstract away the most common effects, that obfuscate variables. Some of those are: not being readily available or available at all, needing external dependencies or needing a plan B if things go seriously wrong (throwing <code class="language-plaintext highlighter-rouge">Exception</code>s).</p>
+
+<h3 id="an-intro-the-maybe-type">An intro: the “Maybe” type</h3>
+
+<p>Given</p>
+
+<p>$\mathbb{A}:$ any type expressible by the type system</p>
+
+<p>you can define:</p>
+
+<p>$Maybe(\mathbb{A}) := \mathbb{A}\bigsqcup()$</p>
+
+<p>–  where $()$ denotes the empty set. We aren’t picking the empty set because it’s empty, but because it is agreed that every set contains it. It serves as the bottom type, a type that is a subtype of all other types. 
+ You might ask what’s in the empty set and your answer is right: nothing. Types like <code class="language-plaintext highlighter-rouge">never</code>, <code class="language-plaintext highlighter-rouge">Nothing</code> or <code class="language-plaintext highlighter-rouge">null</code> can be used to encode exactly that notion. A value of type $Maybe(\mathbb{A})$ is then either an $\mathbb{A}$ or nothing.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#3fd5a3e4-1d0f-4e10-abf7-3ff86c587855'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="3fd5a3e4-1d0f-4e10-abf7-3ff86c587855" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="nb">Option</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="p">{</span>
+    <span class="nb">None</span><span class="p">,</span>
+    <span class="nf">Some</span><span class="p">(</span><span class="n">T</span><span class="p">),</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">+A</span><span class="o">]</span>
+<span class="nc">case</span> <span class="k">object</span> <span class="nc">None</span> <span class="k">extends</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Some</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="nc">extends</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+</ul>
+
+<p>//TODO code matching example</p>
+<h2 id="monads--encoding-the-notion-and-then">Monads – encoding the notion: “And $then$”</h2>
+
+<p>The type $Maybe$, together with two operations defined over it is an example of a monad.
+The monad is a construct that lets us encapsulate some side effect and takes the form of some type constructor $M()$. We’ll call the first associated operation ‘$then$’.</p>
+
+<p>$\cdot \mathbin{then} \cdot: (Maybe(\mathbb{A}), \mathbb{A} \Rightarrow Maybe(\mathbb{B}))\Rightarrow Maybe(\mathbb{B})$</p>
+
+<p>The notation is a bit tense at first but what this operator does is allowing you to chain any number of functions together that return a $Maybe$.</p>
+
+<p>given:</p>
+
+<p>$getUserByEmail: \mathbb{String} \Rightarrow Maybe(\mathbb{User})$
+$getActiveSessionByUser: \mathbb{U}ser \Rightarrow Maybe(\mathbb{S}ession)$<br />
+$getCartContentBySession: \mathbb{S}ession \Rightarrow Maybe(\mathbb{C}artItems)$</p>
+
+<p>you can define:</p>
+
+<p>$getCartContentByEmail: \mathbb{S}tring \Rightarrow Maybe(\mathbb{C}artItems)$<br />
+$= getUserByEmail \mathbin{then} (getActiveSessionByUser \mathbin{then} (getCartContentBySession))$</p>
+
+<p>the operator $then$ runs by a number of aliases, including <code class="language-plaintext highlighter-rouge">flatMap</code>, <code class="language-plaintext highlighter-rouge">pipe</code>, <code class="language-plaintext highlighter-rouge">&gt;&gt;=</code>, the latter pronounced as “[monadic] bind”</p>
+<ul class="uk-tab" data-uk-switcher="{connect:'#da31ced5-15e4-4650-babf-e13a90163fa9'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="da31ced5-15e4-4650-babf-e13a90163fa9" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">let</span> <span class="n">get_user_by_email</span> <span class="p">:</span> <span class="nf">FnOnce</span><span class="p">(</span><span class="o">&amp;</span><span class="nb">str</span><span class="p">)</span> <span class="k">-&gt;</span> <span class="nb">Option</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="o">...</span>
+<span class="nf">get_user_by_email</span><span class="p">(</span><span class="s">"me@hooli.com"</span><span class="p">)</span>
+  <span class="nf">.and_then</span><span class="p">(</span><span class="n">get_active_session_by_user</span><span class="p">)</span>
+  <span class="nf">.and_then</span><span class="p">(</span><span class="n">get_cart_content_by_session</span><span class="p">)</span>
+<span class="c1">//TODO</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">var</span> <span class="n">getUserByEmail</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Option</span><span class="o">[</span><span class="kt">User</span><span class="o">]</span>
+<span class="o">...</span>
+<span class="nf">getUserByEmail</span><span class="o">(</span><span class="s">"me@hooli.com"</span><span class="o">)</span>
+  <span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">activeSession</span><span class="o">)</span>
+  <span class="o">.</span><span class="py">flatMap</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">cartContent</span><span class="o">)</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+</ul>
+
+<p>Let’s stop and ponder for a second on what we just did here.</p>
+
+<h3 id="monad-laws">Monad laws</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h4 id="left--and-right-identity">Left- and right identity</h4>
+<h4 id="associativity">Associativity</h4>
+
+<h3 id="list--i-dont-care-how-many-times">List – I don’t care, how many times</h3>
+<p>Many languages implement $flatMap$ over a collection, offering an alternative for nested loops. The most often cited example is the linked list though, since it can be nicely described in a functional way:</p>
+
+<p>$List(\mathbb{A}):= Cons(\mathbb{A}) \bigsqcup Nil$<br />
+$Nil: List(())$<br />
+$Cons(\mathbb{A}) := \mathbb{A} \times List(\mathbb{A})$<br />
+$\cdot \mathbin{::}\cdot = (head: \mathbb{A}, tail: List(\mathbb{A})) \Rightarrow Cons(\mathbb{A}) \\<br />
+= head :: tail \mapsto (head, tail)$</p>
+
+<p>if you then write:<br />
+<code class="language-plaintext highlighter-rouge">foo</code>$\mathbin{::}$<code class="language-plaintext highlighter-rouge">bar</code>$\mathbin{::}$<code class="language-plaintext highlighter-rouge">baz</code>$\mathbin{::}Nil$</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type Nil = List&lt;Nothing&gt;
+type Cons&lt;A&gt; = {
+  head: A
+  tail: List&lt;A&gt;
+}
+type List&lt;A&gt; = Cons&lt;A&gt; | Nil
+</code></pre></div></div>
+<ul class="uk-tab" data-uk-switcher="{connect:'#c6e0a04a-ba9c-4453-87e4-277b3227d483'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+</ul>
+
+<ul id="c6e0a04a-ba9c-4453-87e4-277b3227d483" class="uk-switcher uk-margin">
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<p>🚧</p>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">List</span><span class="o">[</span><span class="kt">+A</span><span class="o">]</span>
+<span class="nc">case</span> <span class="k">class</span> <span class="nc">::</span><span class="o">[</span><span class="kt">+A</span><span class="o">](</span><span class="n">head</span><span class="k">:</span> <span class="kt">A</span><span class="o">,</span> <span class="n">tail</span><span class="k">:</span><span class="kt">List</span><span class="o">[</span><span class="kt">+A</span><span class="o">])</span> <span class="k">extends</span> <span class="nc">List</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span>
+<span class="k">case</span> <span class="k">object</span> <span class="nc">Nil</span> <span class="k">extends</span> <span class="nc">List</span><span class="o">[</span><span class="kt">Nothing</span><span class="o">]</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h4 id="functor--a-relaxed-monad">Functor – a relaxed monad</h4>
+<p>$flatMap:= flatten \circ map$<br />
+associativity of flatmap ==&gt;<br />
+you can collapse the effect ==&gt;
+no matter how deep you nest the effect $Maybe$, at the end, you will be left with a value or nothing.
+//TODO</p>
+
+<h3 id="either--complex-error-handling">Either – Complex error handling</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h3 id="io--asynchronous-computations">IO – Asynchronous computations</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>
+<h3 id="reader--dependency-injection">Reader – Dependency injection</h3>
+<p><img src="assets/wip.png" alt="wip" class="img-responsive" /></p>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[Type constuctors – Abstracting over (side-)effects We’ve shown how expressing our programs in terms of pure functions is extremely beneficial for composability and correctness, however, we are asking a lot of today’s programs. They have to operate over networks, across multiple processors, often on spotty data and can have ridiculously complex dependencies. At this point it is still unclear, how pure functions can encode such computational contexts. In this chapter, we are introducing an essential construct that can be used to abstract away the most common effects, that obfuscate variables. Some of those are: not being readily available or available at all, needing external dependencies or needing a plan B if things go seriously wrong (throwing Exceptions).]]></summary></entry><entry><title type="html">2. The rules – reasoning about state</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-04-rules.html" rel="alternate" type="text/html" title="2. The rules – reasoning about state" /><published>1970-01-04T00:00:00+01:00</published><updated>1970-01-04T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/rules</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-04-rules.html"><![CDATA[<h2 id="function-application-is-referentially-transparent">Function application is referentially transparent</h2>
+<p>Every occurence of $f(x)$, in any context, always evaluates to the <i>same thing</i>.  In computer science, functions exhibiting this <a href="https://en.wikipedia.org/wiki/Referential_transparency">property</a> are called ‘pure’, and going forward, as we say ‘function’, we always mean a pure function. This is in contrast with some similar constructs like methods or procedures, which might have side effects (effectively reassign $x$ or any other value, making it ambiguous), warranting a distinction. You can totally <strong>not</strong> expect two occurences of $raiseSalary(\text{employee})$ to evaluate to the <i>same thing</i>, as opposed to $getId(\text{user})$. Writing programs that don’t break referential transparency too badly, and how that makes life easy is an important theme of the following chapters.</p>
+
+<h2 id="functions-compose">Functions compose</h2>
+<p>Given the above $f$ and an arbitrary $g \in (\mathbb{N} \Rightarrow \mathbb{Z})$ there’s nothing stopping you from defing $h \in (\mathbb{N} \Rightarrow \mathbb{Q})$ in terms of $f$ and $g$.</p>
+
+\[h:=x \mapsto f(g(x))\]
+
+<p>As long as the domain of $f$ matches the codomain of $g$, it’s perfectly fine to say ‘$f$ of $g$ of $x$’ and $h$ is a well-defined symbol.</p>
+
+<h2 id="function-composition-is-associative">Function composition is associative</h2>
+<p>We can use the following symbol to denote functon composition:</p>
+
+<p>$\displaylines{ \cdot\circ\cdot:(\mathbb{B} \Rightarrow \mathbb{C})\times(\mathbb{A} \Rightarrow \mathbb{B}) \Rightarrow (\mathbb{A} \Rightarrow \mathbb{C}) \\ =(g \circ f)(x:\mathbb{A}) \mapsto g(f(x)) }$<br />
+//TODO let your programs compose like functions</p>
+
+<p>the operator “$\circ$” (read: “after”) is a function over the set of functions. Furthermore, it is an associative one.</p>
+
+<p><img src="assets/AssociativityDiagram.png" alt="associativity" class="img-responsive" /></p>
+
+<p>That means that the order of application does not matter, the expressions “$(h\mathbin{\text{after}}g)\mathbin{\text{after}}f$” and “$h\mathbin{\text{after}}(g\mathbin{\text{after}}f)$” have the same meaning.</p>
+
+<h3 id="pipe">Pipe</h3>
+<p>you can also trivially define the well-known $pipe$ operator, often denoted with <code class="language-plaintext highlighter-rouge">|</code>:</p>
+
+<p>$\cdot \mathbin{pipe} \cdot:(x:\mathbb{A}, f: \mathbb{A} \Rightarrow \mathbb{B}) \Rightarrow \mathbb{B} = x \mathbin{pipe} f \mapsto f(x)$,<br />
+where $\mathbb{B}:=$ the codomain of $f$.</p>
+
+<p>We like this one a lot, as it helps a great deal with readibility – the order in which functions are applied now matches their order of appearance in the source code, ie</p>
+
+<p>//TODO do away with db due to async connotation<br />
+$ (getCartContents \circ getUserByEmail \circ getDbHandle)()$</p>
+
+<p>then becomes:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">getDbHandle</span><span class="p">()</span> <span class="o">|</span> <span class="nx">getUserByEmail</span> <span class="o">|</span> <span class="nx">getCartContent</span>
+</code></pre></div></div>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[Function application is referentially transparent Every occurence of $f(x)$, in any context, always evaluates to the same thing. In computer science, functions exhibiting this property are called ‘pure’, and going forward, as we say ‘function’, we always mean a pure function. This is in contrast with some similar constructs like methods or procedures, which might have side effects (effectively reassign $x$ or any other value, making it ambiguous), warranting a distinction. You can totally not expect two occurences of $raiseSalary(\text{employee})$ to evaluate to the same thing, as opposed to $getId(\text{user})$. Writing programs that don’t break referential transparency too badly, and how that makes life easy is an important theme of the following chapters.]]></summary></entry><entry><title type="html">1. The tooling - functions and types</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-03-tooling.html" rel="alternate" type="text/html" title="1. The tooling - functions and types" /><published>1970-01-03T00:00:00+01:00</published><updated>1970-01-03T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/tooling</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-03-tooling.html"><![CDATA[<p>We’ve been talking about <i>data</i>, <i>operations</i> and <i>chaining</i> instructions - intuitively the concept of a function that one has become familiar with during school years, seems like something that could be of interest here. Let’s reiterate what that is and what extremely useful properties it has.</p>
+
+<h1 id="sets">Sets</h1>
+
+<p>$x: \mathbb{z}$ – Let x be an element of $\mathbb{Z}$.<br />
+$\mathbb{Z}$ is a set. In typed programming languages, expressions are assigned a type. You can think of types as sets.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#320df074-16cc-4f44-91a8-aa00a2d92737'}">
+
+	<li class="uk-active"><a href="#">c</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="320df074-16cc-4f44-91a8-aa00a2d92737" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">x</span><span class="k">:</span> <span class="kt">Int</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Integer</span> <span class="n">x</span><span class="o">;</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h1 id="anatomy-of-a-function">Anatomy of a function</h1>
+
+<p>They have to do with two kinds of data: the kind they can be applied to, and the kind they spew out. You can describe one like this:</p>
+
+\[f:\mathbb{Z} \Rightarrow \mathbb{Q} = x \mapsto \frac{x}{2}\]
+
+<p>where $f$ is the symbol by which the function is referenced, $\mathbb{Z}$ is the set of things $f$ is applicable to, and the expression on the right hand side maps any element $x$ of $\mathbb{Z}$ to exactly one thing of type $\mathbb{Q}$.
+$f(x)$ - read: ‘$f$ of $x$’ is then called the image of $x$ under $f$. 
+The term $\mathbb{Z} \Rightarrow \mathbb{Q}$ denotes the set of functions that map from $\mathbb{Z}$ to $\mathbb{Q}$. 
+The set of functions is indeed a thing, thus we will encounter functions that operate on other functions, return them, or both. Note that in order for the expression $f(x)$ to make sense, both the symbols $f$ and $x$ have to be unambiguous, the practical implication being that you can’t reassign them. //TODO</p>
+
+<h1 id="set-operators--algebraic-data-types">Set operators – Algebraic data types</h1>
+<p>The notion of a function is quite closely coupled to that of a set, you define one in terms of its domain and codomain. Two operations over sets are of fundamental interest: they enable us to clearly define what data our function can access and what shape of data it outputs.</p>
+
+<p>Algebraic data types are the way functional programs model the world and represent state - they are a notion just as fundamental as classes are for OOP. Given some axiomatic types – think: primitives, they enable you to represent arbitrarily complex data.</p>
+
+<h2 id="product-type">Product type</h2>
+<p>aka tuple, record, struct</p>
+
+<p>$\mathbb{A}\times\mathbb{B}$
+ – an element from $\mathbb{A}$ $and$ one from $\mathbb{B}$.</p>
+
+<p>A $\mathbb{U}$sername an an $\mathbb{I}$d. $\mathbb{B}$read and $\mathbb{B}$utter. The deeply familiar construct used to bunch up a couple of things that just go together.  If you’ve ever seen a tuple, struct or even a class (forget methods though –setters especially), you already have a great intuition about what it does. You’d want to use it for all the usual reasons, like grouping data points that don’t make sense without each other or outputting multiple values.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#6c5dcaa9-651e-4151-b2c2-1adc31f8c504'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+	<li><a href="#">java</a></li>
+
+</ul>
+
+<ul id="6c5dcaa9-651e-4151-b2c2-1adc31f8c504" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">User</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">email</span><span class="p">:</span> <span class="kr">string</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="kr">number</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">User</span><span class="p">{</span>
+    <span class="n">email</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span>
+    <span class="n">id</span><span class="p">:</span> <span class="nb">u64</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">case</span> <span class="k">class</span> <span class="nc">User</span><span class="o">(</span><span class="n">email</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">id</span><span class="k">:</span> <span class="kt">Long</span><span class="o">)</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">record</span> <span class="nf">User</span><span class="o">(</span><span class="nc">String</span> <span class="n">email</span><span class="o">,</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">){}</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<p>It gives us a trivial way to extend the capabilities of the function costruct: it is now capable of taking on any finite number of arguments that can be expressed via our type system, as well as outputting structured data. Given:</p>
+
+<p>$\mathbb{U}ser:=\mathbb{S}tring \times \mathbb{L}ong $
+//TODO</p>
+
+<h3 id="encoding-fun">Encoding fun()</h3>
+
+<p>For all intents and purposes, you can always substitute an n-ary function</p>
+
+<p>$f:(x \in \mathbb{A}, y \in \mathbb{B}, …, i \in \mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>for an unary one, taking a product:</p>
+
+<p>$f:(\mathbb{A}\times\mathbb{B}\times … \times \mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>a perhaps bit lesser-known trick is to substitute for a chain of unary functions, each returning an unary function taking the next member of the product:</p>
+
+<p>$f:(\mathbb{A})\Rightarrow(\mathbb{B})\Rightarrow … \Rightarrow (\mathbb{I}) \Rightarrow \mathbb{Z}$</p>
+
+<p>you would then apply $f$ like this:</p>
+
+<p>$z:\mathbb{Z} = f(x)(y)…(i)$</p>
+
+<p>The third form is called a Curried function.</p>
+
+<h2 id="sum-type">Sum type</h2>
+<p>aka disjoint union, tagged union, coproduct</p>
+
+<p>\(\mathbb{A}\bigsqcup\mathbb{B}\), sometimes: $\mathbb{A}+\mathbb{B}$
+ – an element from $\mathbb{A}$ $or$ from $\mathbb{B}$.</p>
+
+<ul class="uk-tab" data-uk-switcher="{connect:'#444b1a23-d526-44d5-9dc0-2ec91b994294'}">
+
+	<li class="uk-active"><a href="#">Typescript</a></li>
+
+	<li><a href="#">rust</a></li>
+
+	<li><a href="#">scala</a></li>
+
+</ul>
+
+<ul id="444b1a23-d526-44d5-9dc0-2ec91b994294" class="uk-switcher uk-margin">
+
+	<li>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">type</span> <span class="nx">Pet</span> <span class="o">=</span> <span class="nx">Cat</span> <span class="o">|</span> <span class="nx">Dog</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-rust highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">enum</span> <span class="n">Pet</span> <span class="p">{</span>
+    <span class="n">Cat</span><span class="p">,</span>
+    <span class="n">Dog</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</li>
+
+	<li>
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">sealed</span> <span class="k">trait</span> <span class="nc">Pet</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Cat</span><span class="o">()</span> <span class="k">extends</span> <span class="nc">Pet</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Dog</span><span class="o">()</span> <span class="k">extends</span> <span class="nc">Pet</span>
+</code></pre></div></div>
+</li>
+
+</ul>
+
+<h3 id="pattern-matching">Pattern matching</h3>
+<p>You have at some point likely encountered something like <a href="https://en.wikipedia.org/wiki/Dirichlet_function">this</a> function:</p>
+
+<p>$f: =
+(x : \mathbb{R}) \mapsto
+  \begin{cases}
+    1 &amp;\text{if } (x) \in \mathbb{Q} \\<br />
+    0 &amp;\text{else}
+  \end{cases} $</p>
+
+<p>//TODO ad-hoc polymorphism</p>
+
+<h2 id="key-takeaways">Key takeaways</h2>
+<ul>
+  <li>If you read “Type”, think: “Set”</li>
+  <li>If you see “<code class="language-plaintext highlighter-rouge">:</code>”, think: “$\in$”</li>
+  <li>If you read “Product type”, think: “$and$”, “Struct”, “Tuple”, even: “Class”</li>
+  <li>If you read “Sum type”, think: “$or$”, “Enum”, “Traits” or whatever construct your language choses to encode this type-level operator with</li>
+</ul>
+
+<h2 id="optional-reading">Optional reading</h2>
+<h3 id="top--bottom--and-unit-types">Top-, Bottom- and Unit types</h3>
+<ul>
+  <li>Top type ~ a supertype of all types. <code class="language-plaintext highlighter-rouge">Any</code>.</li>
+  <li>Unit type ~ any singleton type really. Point is, that if it serves as the codomain of a pure function, all the elements of the domain can only map to a single element in the codomain, thus all pure functions mapping a given type to the unit type are equal.</li>
+  <li>Bottom type ~ a subtype of all types. <code class="language-plaintext highlighter-rouge">Nothing</code>.
+<img src="assets/wip.png" alt="wip" class="img-responsive" /></li>
+</ul>
+
+<h3 id="a-side-note-on-etymology">A side note on etymology</h3>
+<p>The terms “sum-“ and “product type” reflect on the observation that the number of elements in the cartesian product and disjoint union, denoted $|\mathbb{A}\times\mathbb{B}|$ and $|\mathbb{A}\bigsqcup\mathbb{B}|$, equals that of 
+$|\mathbb{A}| \cdot |\mathbb{B}|$ and $|\mathbb{A}|\ + |\mathbb{B}|$ respectively.<br />
+//TODO verify milewski<br />
+Over some type systems, these operators also work analoguosly to multiplication and addition over a semiring.
+Category theory has the concept of a “dual construct”, which is then called co-<code class="language-plaintext highlighter-rouge">$CONSTRUCT</code>, and the disjoint union being the dual of the product in that framework, is termed “coproduct”.</p>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[We’ve been talking about data, operations and chaining instructions - intuitively the concept of a function that one has become familiar with during school years, seems like something that could be of interest here. Let’s reiterate what that is and what extremely useful properties it has.]]></summary></entry><entry><title type="html">The Problem</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-02-problem.html" rel="alternate" type="text/html" title="The Problem" /><published>1970-01-02T00:00:00+01:00</published><updated>1970-01-02T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/problem</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-02-problem.html"><![CDATA[<p>One may choose to look at computer programs as a sequence of instructions, ie some operations carried out on some data.
+Since the outcome of any instruction depends on all the other instructions carried out before it, the name of the game soon became finding approaches that let humans reason about the correctness of these instructions - given out by the billions every second on modern hardware. We want to make sure that we do the <i>right operations</i>, on the <i>right data</i>, in the <i>right order</i>.
+Functional programming is one of those approaches, and this post tries to give a very high level overview of what it is about.</p>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[One may choose to look at computer programs as a sequence of instructions, ie some operations carried out on some data. Since the outcome of any instruction depends on all the other instructions carried out before it, the name of the game soon became finding approaches that let humans reason about the correctness of these instructions - given out by the billions every second on modern hardware. We want to make sure that we do the right operations, on the right data, in the right order. Functional programming is one of those approaches, and this post tries to give a very high level overview of what it is about.]]></summary></entry><entry><title type="html">Foreword</title><link href="https://sighingnow.github.io/jekyll-gitbook/1970-01-01-foreword.html" rel="alternate" type="text/html" title="Foreword" /><published>1970-01-01T00:00:00+01:00</published><updated>1970-01-01T00:00:00+01:00</updated><id>https://sighingnow.github.io/jekyll-gitbook/foreword</id><content type="html" xml:base="https://sighingnow.github.io/jekyll-gitbook/1970-01-01-foreword.html"><![CDATA[<p>This guide is intended for those who already have some familiarity with writing code and seeks to provide a somewhat comprehensive overview on the essence of functional programming.</p>
+
+<p>It is not meant to teach functional techniques in any specific language, but includes snippets in multiple of them. The intent is to develop the intuition that the constructs discussed here are fundamentally valid independently of language limitations, as well as to help with terminology: many of these are referenced differently depending on whether the exchange is specific to a language.</p>
+
+<p>One of the goals is to provide a path through this tutorial with the least possible amount of meta. I am striving to only introduce notions that “pull their own weight” – either have direct practical applications, or are directly necessary for those that have direct applications, or provide entry points to topics hat //TODO.</p>]]></content><author><name>János Rauschenberger</name></author><summary type="html"><![CDATA[This guide is intended for those who already have some familiarity with writing code and seeks to provide a somewhat comprehensive overview on the essence of functional programming.]]></summary></entry></feed>
